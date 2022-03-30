@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="icon" href="images/fav.ico">
+  <title>Pokedex</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+    <nav>
+      <img src="images/fav.ico" alt="">
+      <h2>El pokedex definitivo</h2>
+    </nav>
+  </div>
+  </header>
+  <!-- Show case -->
+  <section class="showcase">
+    <div class="showcase-content">
+      <img src="images/fav.ico" alt="">
+      <h1>Busca el tipo de pokemon que mas te gusta y dale click para ver sus habilidades!</h1>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Explore All</button>
+        <div class="dropdown-content">
+        <a onclick="filterPokemon('')">Explorar</a>
+        <a onclick="filterPokemon('grass')">Tipo Hierba</a>
+        <a onclick="filterPokemon('bug')">Tipo Bicho</a>
+        <a onclick="filterPokemon('poison')">Tipo Veneno</a>
+        <a onclick="filterPokemon('fire')">Tipo Fuego</a>
+        <a onclick="filterPokemon('water')">Tipo Agua</a>
+        <a onclick="filterPokemon('flying')">Tipo Volador</a>
+        <a onclick="filterPokemon('normal')">Tipo Normal</a>
+        <a onclick="filterPokemon('electric')">Tipo Electrico</a>
+        <a onclick="filterPokemon('ground')">Tipo Tierra</a>
+        <a onclick="filterPokemon('fairy')">Tipo Hada</a>
+        <a onclick="filterPokemon('fighting')">Tipo Peleador</a>
+        <a onclick="filterPokemon('psychic')">Tipo Psiquico</a>
+        <a onclick="filterPokemon('rock')">Tipo Roca</a>
+        <a onclick="filterPokemon('steel')">Tipo Acero</a>
+        <a onclick="filterPokemon('ice')">Tipo Hielo</a>
+        <a onclick="filterPokemon('dragon')">Tipo Dragon</a>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">Explore</a> -->
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="about m-t">
+    <div class="container">
+      <h2 class="m-t">Pokedex original</h2>
+      <div class="container2">
+        <ul id="pokedex"></ul>
+      </div>
+    </div>
+  </section>
+  <div class="popup" id="popup">
+    <div class="popup-inner">
+      <a class="popup-close" id="popup-close" onclick="closePopup()">X</a>
+      <div class="popup-photo">
+        <h1 id="photo-heading"></h1>
+        <img id="popup-photo">
+      </div>
+      <div class="popup-text" id="popup-text">
+        <h2 id="popup-ability"></h2>
+        <ul id="ability-list"></ul>
+      </div>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>

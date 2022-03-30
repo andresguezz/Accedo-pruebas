@@ -1,0 +1,89 @@
+body {
+    background-color:#b0adb8;
+}
+*{
+    position:relative;
+}
+textarea:focus::placeholder{
+    color:white;
+}
+#mainDiv{
+    margin-top:150px;  
+}
+#encodeEnter , #decodeEnter{
+    width:100px;
+    height:40px;
+    background-color:#F7DC1B;
+    border:none;
+    display:block;
+    margin:15px;
+}
+#encodeEnter{
+    margin-top:50px;
+}
+/* encode div */
+#encodeDiv , #decodeDiv{
+    margin-top:20px;
+    opacity:0;
+    display:none;
+}
+#encText , #decCode{
+    width:300px;
+    height:180px;
+    border:none;    
+}
+#encResult , #decResult{
+    width:300px;
+    height:200px;
+    background-color:white;
+    border:1px solid;
+    margin-top:10px;
+    display:none;
+}
+#encBtn ,#decBtn{
+    background-color:#F7DC1B;
+    width:100px;
+    height:30px;
+    border:none;
+    display:block;
+}
+#encBack , #decBack{
+    height:25px;
+    background-color:white;
+    border:none;
+};
+
+
+/* encode div */
+#encodeDiv , #decodeDiv{
+    margin-top:20px;
+    opacity:0;
+    display:none;
+   
+}
+#encText , #decCode{
+    width:300px;
+    height:180px;
+    border:none;    
+}
+#encResult , #decResult{
+    width:300px;
+    height:200px;
+    background-color:white;
+    border:1px solid;
+    margin-top:10px;
+    display:none;
+}
+#encBtn ,#decBtn{
+    background-color:#F7DC1B;
+    width:100px;
+    height:30px;
+    border:none;
+    margin-top:10px;
+    display:inline;
+}
+#encBack , #decBack{
+    height:25px;
+    background-color:white;
+    border:none;
+}
